@@ -11,7 +11,7 @@ const palindrome = (str) =>{
    return true
 }
 // * Output
-console.log(palindrome("qwe"));
+console.log(palindrome("qwe"))
 console.log(palindrome("ababa"));
 
 
@@ -78,9 +78,23 @@ const removeDup=(arr)=>{
     return ans
 }
 const arr = [1,3,5,2,9,7,8,3,2,2,2,1]
+// * Output
 console.log(removeDup(arr))
 
-
+// ! from obj remove the specific key and value from it
+const Obj ={ name: "Cess", work: "developer", countryVisits: 3 }
+const removeObj = (obj,remkey)=>{
+    const ans={    }
+    for (let key in obj){
+        if(key!== remkey){
+            ans[key] =obj[key]
+        }
+    }
+    return ans
+    
+}
+// * Output
+console.log(removeObj(Obj,"name"))
 
 // ! Largest number in a array
 const largest=()=>{
