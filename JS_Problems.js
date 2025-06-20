@@ -11,6 +11,7 @@ const palindrome = (str) =>{
    return true
 }
 // * Output
+console.log(palindrome("qwe"));
 console.log(palindrome("ababa"));
 
 
